@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-ShemYu}"
 REPO="${1:-single-page-games}"
-DESCRIPTION="Shem's Tiny Arcade: tiny browser games and single-page playable experiments"
+DESCRIPTION="Tiny Arcade: an instant-play hub for small browser games"
 OWNER_LOWER="$(printf '%s' "$OWNER" | tr '[:upper:]' '[:lower:]')"
 PAGES_URL="https://${OWNER_LOWER}.github.io/${REPO}/"
 
@@ -30,7 +30,7 @@ git checkout -B main >/dev/null 2>&1
 
 git add .
 if ! git diff --cached --quiet; then
-  git commit -m "Add Shem's Tiny Arcade"
+  git commit -m "Redesign homepage as searchable game hub"
 fi
 
 if gh repo view "$OWNER/$REPO" >/dev/null 2>&1; then

@@ -3,87 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 · Shem's Tiny Arcade</title>
+  <meta name="theme-color" content="#070a12">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <title>Game not found — Tiny Arcade</title>
   <style>
-    :root {
-      color-scheme: dark;
-      --bg: #120f1f;
-      --ink: #fff9df;
-      --muted: #cfc3e6;
-      --pink: #ff82b5;
-      --yellow: #ffe16b;
-      --line: #66547f;
-    }
+    :root { color-scheme: dark; --bg:#070a12; --panel:#11182a; --ink:#f4f7ff; --muted:#aab4cb; --line:rgba(156,176,219,.2); --cyan:#65e6ff; }
     * { box-sizing: border-box; }
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 20% 10%, rgba(121, 216, 255, .18), transparent 24rem),
-        radial-gradient(circle at 80% 5%, rgba(255, 130, 181, .16), transparent 28rem),
-        var(--bg);
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Noto Sans TC", monospace;
-    }
-    main {
-      width: min(680px, 100%);
-      border: 2px solid var(--line);
-      border-radius: 22px;
-      padding: 34px;
-      background: rgba(38, 30, 58, .82);
-      box-shadow: 10px 10px 0 rgba(0,0,0,.3);
-      text-align: center;
-    }
-    .pixel {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      height: 52px;
-      margin: 0 auto 22px;
-      border: 2px solid #3a2842;
-      border-radius: 12px;
-      color: #352038;
-      background: var(--yellow);
-      box-shadow: 5px 5px 0 #3a2842;
-      font-weight: 950;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(2.2rem, 7vw, 4.5rem);
-      line-height: .9;
-      letter-spacing: -.08em;
-    }
-    p {
-      margin: 18px auto 28px;
-      max-width: 480px;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-    a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 46px;
-      padding: 0 16px;
-      border: 2px solid #3c2943;
-      border-radius: 12px;
-      color: #342038;
-      background: var(--pink);
-      font-weight: 950;
-      text-decoration: none;
-      box-shadow: 5px 5px 0 #3c2943;
-    }
+    body { min-height:100vh; margin:0; display:grid; place-items:center; padding:24px; color:var(--ink); background:radial-gradient(circle at 50% 10%,rgba(101,230,255,.14),transparent 30rem),var(--bg); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(520px,100%); padding:42px; border:1px solid var(--line); border-radius:24px; background:rgba(17,24,42,.82); text-align:center; box-shadow:0 28px 90px rgba(0,0,0,.35); }
+    .code { margin:0; color:var(--cyan); font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.8rem; font-weight:800; letter-spacing:.14em; }
+    h1 { margin:13px 0 12px; font-size:clamp(2.2rem,8vw,4.5rem); line-height:.92; letter-spacing:-.07em; }
+    p { margin:0 auto 25px; max-width:390px; color:var(--muted); line-height:1.65; }
+    a { display:inline-flex; min-height:44px; padding:0 16px; border-radius:11px; align-items:center; color:#061019; background:var(--cyan); font-weight:850; text-decoration:none; }
   </style>
 </head>
 <body>
   <main>
-    <div class="pixel">?</div>
-    <h1>Level not found.</h1>
-    <p>This tiny world is not on the arcade shelf yet, or the URL wandered down the wrong path.</p>
-    <a href="/single-page-games/">Back to Tiny Arcade</a>
+    <p class="code">404 · LEVEL NOT FOUND</p>
+    <h1>Wrong portal.</h1>
+    <p>This game path does not exist—or it moved while nobody was looking.</p>
+    <a href="/single-page-games/">Return to the game library</a>
   </main>
 </body>
 </html>
