@@ -1,6 +1,13 @@
 name: Apply Mochi Sky feedback assets
 
 on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - games/mochi-sky/tools/generate_runtime_art.py
+      - games/mochi-sky/tools/normalize_generated_art.py
+      - .github/workflows/apply-mochi-feedback.yml
   push:
     branches:
       - fix/mochi-sky-inhale-scene-layers
