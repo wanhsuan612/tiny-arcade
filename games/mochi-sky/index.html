@@ -1305,12 +1305,12 @@
 
       if (player.inhale && imageReady(pixelAssets.inhale)) {
         const inhaleStep = Math.floor(player.inhaleTick / 4);
-      const inhaleFrame = inhaleStep < animationFrames.inhaleStartup.length
-        ? animationFrames.inhaleStartup[inhaleStep]
-        : sequenceFrame(
-            animationFrames.inhaleHold,
-            inhaleStep - animationFrames.inhaleStartup.length
-          );
+        const inhaleFrame = inhaleStep < animationFrames.inhaleStartup.length
+          ? animationFrames.inhaleStartup[inhaleStep]
+          : sequenceFrame(
+              animationFrames.inhaleHold,
+              inhaleStep - animationFrames.inhaleStartup.length
+            );
         const flip = player.dir < 0;
         const dx = flip ? x - 33 : x - 15;
         drawSprite(pixelAssets.inhale, [inhaleFrame * 96, 0, 96, 64], dx, y - 7 + bob, 48, 32, flip);
@@ -1319,10 +1319,10 @@
 
       if (imageReady(pixelAssets.mochi)) {
         const frame = !player.onGround
-        ? (player.vy < 0 ? 6 : 7)
-        : walking
-          ? sequenceFrame(animationFrames.playerWalk, player.anim)
-          : sequenceFrame(animationFrames.playerIdle, gameTime * 3);
+          ? (player.vy < 0 ? 6 : 7)
+          : walking
+            ? sequenceFrame(animationFrames.playerWalk, player.anim)
+            : sequenceFrame(animationFrames.playerIdle, gameTime * 3);
         drawSprite(pixelAssets.mochi, [frame * 64, 0, 64, 64], x - 18, y - 12 + bob, 36, 36, player.dir < 0);
         return;
       }
