@@ -60,7 +60,7 @@ window.TINY_ARCADE_GAMES = [
   {
   id: "wink-pop-seoul",
   title: {
-    en: "K-Idol Eye Runway",
+    en: "Wink Pop Seoul",
     zh: "韓系偶像電眼伸展台"
   },
   description: {
@@ -71,7 +71,7 @@ window.TINY_ARCADE_GAMES = [
   source: "https://github.com/ShemYu/tiny-arcade/tree/main/games/wink-pop-seoul",
   preview: "./assets/previews/wink-pop-seoul.png",
   previewAlt: {
-    en: "K-Idol Eye Runway gameplay with an idol charming fans in a festival street",
+    en: "Wink Pop Seoul gameplay with an idol charming fans in a festival street",
     zh: "韓系偶像電眼伸展台遊戲畫面，偶像在祭典街道上對粉絲放電"
   },
   genres: ["arcade", "action"],

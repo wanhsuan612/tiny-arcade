@@ -53,9 +53,9 @@ This repository is also an open invitation. Play something, point out what feels
     </td>
     <td width="33%" valign="top">
       <a href="https://shemyu.github.io/tiny-arcade/games/wink-pop-seoul/">
-        <img src="./assets/previews/wink-pop-seoul.png" alt="K-Idol Eye Runway gameplay preview" width="100%">
+        <img src="./assets/previews/wink-pop-seoul.png" alt="Wink Pop Seoul gameplay preview" width="100%">
       </a>
-      <h3>K-Idol Eye Runway / 韓系偶像電眼伸展台</h3>
+      <h3>Wink Pop Seoul / 韓系偶像電眼伸展台</h3>
       <p>A playful side-scrolling charm game. Aim your gaze, race your rivals, and win the crowd before time runs out.</p>
       <p><a href="https://shemyu.github.io/tiny-arcade/games/wink-pop-seoul/"><strong>Play</strong></a> · <a href="./games/wink-pop-seoul/">Source</a></p>
     </td>
